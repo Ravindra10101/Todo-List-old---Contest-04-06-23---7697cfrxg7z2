@@ -6,7 +6,7 @@ function App() {
   const [currentTask, setCurrentTask] = useState("");
   const [editingTask, setEditingTask] = useState("");
 
-  const handleAddTask = () => {
+  const  handleAddTask = () => {
     if (currentTask.trim() !== "") {
       setTasks([...tasks, { title: currentTask, isEditing: false }]);
       setCurrentTask("");
